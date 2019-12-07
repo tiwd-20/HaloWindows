@@ -129,6 +129,14 @@
   font-size: 0.9em;
 }
 
+.about-img {
+  width: 90%;
+  margin: 0 auto;
+}
+.about-img img {
+  width: 100%;
+}
+
 /* ======================================  FOOTER  ==== */
 
 footer {
