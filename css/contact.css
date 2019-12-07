@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #8a8c8f;
+    color: #010101;
+  }
+  
+  .body-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #c2c2c2;
+    /* border: 1px solid brown; */
+  }
+
+  /*  --------================================== NAV ------------ */
+
+  .nav-header {
+    /* border: 1px solid palegreen; */
+    display: flex;
+    justify-content: space-between;
+    background-color: #010101;
+  }
+
+  nav {
+    background: #010101;
+    opacity: 1;
+    /* border: 1px solid green; */
+    padding: 0 15px;
+    margin: 10px 10px 0 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #8a8c8f;
+    padding: 7px;
+  }
+  
+  .nav-links a:hover {
+    color: #b29803;
+  }
+  
+  .hidden-nav {
+    /* border: 1px solid red; */
+    width: 20%;
+    max-width: 150px;
+    margin: 10px;
+  }
+  .hidden-nav img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* hamburger icon is hidden on desktops */
+  
+  #menu-toggle, .hamburger {
+    display: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .nav-links a {
+    flex: 1 0;
+    text-align: center;
+  }
+
+  /*  -----------========================= Number ------------- */
+
+.contact-number {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: right; */
+  padding: 12px;
+  background-color: #c2c2c2;
+  font-size: 0.9em;
+}
+.contact-number img {
+  padding-right: 10px;
+}
+.contact-number h3 {
+  letter-spacing: 1.5px;
+  color: #010101;
+  padding-right: 10px;
+}
+.contact-number a {
+  text-decoration: none;
+  color: #010101;
+  letter-spacing: 1.5px;
+}
+
+/* ======================================  Content  ==== */
+.intro {
+  /* border: 1px solid red; */
+  text-align: center;
+  padding: 15px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+.intro h1 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+legend {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  
+  fieldset {
+    border: 0;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 1em;
+  }
+
+/* .contact-container {
+    border: 1px solid red;
+} */
+
+::placeholder {
+    text-align: right;
+    font-style: italic;
+    font-size: 0.8em;
+    color: #c43c24;
+    padding-right: 5px;
+  }
+  
+  button:hover {
+    background-color: #c43c24;
+    cursor: pointer;
+  }
+  
+  button:active {
+    background-color: #999;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    background-color: #b29803;
+    outline: none;
+  }
+
+  input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  color: #000;
+  font-size: 1em;
+  background-color: #8a8c8f;
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+  border-style: none;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  transition: background-color 1s ease;
+}
+
+button {
+    width: 150px;
+    padding: 10px 10px;
+    background-color: #b29803;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 0;
+    margin: 8px 0 25px 10px;
+  }
+
+
+/* ======================================  FOOTER  ==== */
+
+footer {
+    background-color: #010101;
+    padding-bottom: 10px;
+  }
+  
+  .footer-container {
+    height: 100px;
+    display: flex;
+    width: 100%;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    /* border: 1px solid red; */
+  }
+  
+  .halo-logo-footer {
+    display: flex;
+    width: 20%;
+    /* border: 1px solid aqua; */
+    align-items: center;
+    justify-content: center;
+  }
+  .halo-logo-footer img {
+    height: 80px;
+  }
+  
+  .fb-logo {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid aqua; */
+  }
+  .fb-logo img {
+    height: 80px;
+  }
+  
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    /* border: 1px solid aqua; */
+  }
+  
+  .copyright p {
+    text-align: center;  
+    color: #c2c2c2;
+    font-size: 0.9em;
+  }
+
+  
+    
+    /* =====     Media queries     ===== */
+    
+    @media screen and (max-width: 768px) {
+    
+      .hidden-nav {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        background: #010101;
+        /* border: 1px solid red; */
+      }
+      
+      nav {
+        padding: .5rem;
+        background: #010101;
+        position: fixed;
+        flex: 1;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+      
+      .hamburger {
+        display: flex;
+        /* border: 1px solid aqua; */
+        color: #b29803;
+        font-size: 1.7em;
+      }
+      
+      /*   when hamburger icon is checked, nav links will pop out */
+      
+      #menu-toggle:checked ~ .nav-links {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .inline {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    
+      /* .container {
+        max-width: 750px;
+      } */
+    
+      .inline label {
+        width: 25%;
+      }
+    
+    
+    
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      select {
+        width: 70%;
+      }
+    
+      textarea {
+        resize: none;
+      }
+
+    }
