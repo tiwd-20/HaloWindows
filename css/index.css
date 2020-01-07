@@ -541,3 +541,13 @@ footer {
   }
   
 }
+
+@media (max-width: 894px) {
+
+  .contact-number {
+    flex-direction: column;
+  }
+  .contact-block {
+    margin: 5px 0;
+  }
+}
