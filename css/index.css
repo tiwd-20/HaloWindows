@@ -201,18 +201,15 @@ span:nth-child(4) {
 }
 
 .contact-number {
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 80%;
   margin: 0 auto;
   padding: 12px;
-  /* background-color: #010101; */
   font-size: 0.9em;
 }
 .contact-block {
-  border: 1px solid green;
   display: flex;
   align-items: center;
   justify-content: center;

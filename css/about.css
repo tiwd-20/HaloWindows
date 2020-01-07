@@ -74,29 +74,35 @@
 
   /*  -----------========================= Number ------------- */
 
-.contact-number {
-  /* border: 1px solid red; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* text-align: right; */
-  padding: 12px;
-  background-color: #c2c2c2;
-  font-size: 0.9em;
-}
-.contact-number img {
-  padding-right: 10px;
-}
-.contact-number h3 {
-  letter-spacing: 1.5px;
-  color: #010101;
-  padding-right: 10px;
-}
-.contact-number a {
-  text-decoration: none;
-  color: #010101;
-  letter-spacing: 1.5px;
-}
+  .contact-number {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 12px;
+    font-size: 0.9em;
+  }
+  .contact-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-number img {
+    padding-right: 10px;
+  }
+  .contact-number h3 {
+    letter-spacing: 1.5px;
+    color: #010101;
+    padding-right: 10px;
+    font-size: 1.3em;
+    /* justify-content: space-around; */
+  }
+  .contact-number a {
+    text-decoration: none;
+    color: #010101;
+    letter-spacing: 1.5px;
+  }
 
 /* ======================================  About  ==== */
 
@@ -234,4 +240,14 @@ footer {
         flex-direction: column;
       }
 
+    }
+
+    @media (max-width: 894px) {
+
+      .contact-number {
+        flex-direction: column;
+      }
+      .contact-block {
+        margin: 5px 0;
+      }
     }
