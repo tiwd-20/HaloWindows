@@ -201,14 +201,21 @@ span:nth-child(4) {
 }
 
 .contact-number {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  /* text-align: right; */
+  width: 80%;
+  margin: 0 auto;
   padding: 12px;
   /* background-color: #010101; */
   font-size: 0.9em;
+}
+.contact-block {
+  border: 1px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contact-number img {
   padding-right: 10px;
@@ -217,6 +224,8 @@ span:nth-child(4) {
   letter-spacing: 1.5px;
   color: #010101;
   padding-right: 10px;
+  font-size: 1.3em;
+  /* justify-content: space-around; */
 }
 .contact-number a {
   text-decoration: none;
@@ -263,7 +272,7 @@ span:nth-child(4) {
   letter-spacing: 1px;
   font-style: italic;
   color: #b29803;
-  font-family: 'Parisienne', cursive;
+  font-family: 'Rokkitt', serif;
   font-size: 1.4em;
   text-shadow: 0px 0px 10px rgba(255,255,255,0.79);
   /* width: 50%; */
